@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SirenRotation : MonoBehaviour
 {
+    public float rotationSpeed = 400f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,6 +12,6 @@ public class SirenRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up * 400f * Time.deltaTime);
+        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
     }
 }
